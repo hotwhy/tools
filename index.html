@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>图片生成工具</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://cdn.bootcss.com/babel-polyfill/7.2.5/polyfill.min.js"></script>
+  <script src="https://cdn.bootcss.com/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+  <script src="https://cdn.bootcss.com/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+</head>
+<body>
+    <div>
+      <div class="dv" id="btn">生成图像预览</div>
+      <div class="dv" id="btnDownLoad">下载图片</div>
+      <div class="dv" id="clearData">清空输入框</div>
+    </div>
+    <div class="condition">
+      <div>
+        <label>请选择模版：</label>
+        <select value="1" id="temp">
+          <option value="1">最佳创意奖</option>
+          <option value="2">最佳挑战奖</option>
+          <option value="3">最佳人气奖</option>
+          <option value="4">最佳作品奖</option>
+          <option value="5">优秀入围奖</option>
+          <option value="6">明日之星奖</option>
+        </select>
+      </div>
+      <div>
+        <label>请输入成员：</label>
+        <textarea id="names" cols="100" rows="5" value="111" placeholder="成员之间以回车键隔开"></textarea>
+      </div>
+    </div>
+    <h3>模版预览（预览完成可以直接点击下载图片到本地）：</h3>
+    <div class="contents"></div>
+</body>
+<script src="js/index.js"></script>
+</html>

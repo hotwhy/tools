@@ -17,7 +17,7 @@ document.querySelector('#btn').onclick = function () {
       div.setAttribute('style', `background: ${imgUrl}`)
       div.dataset.item = item
       div.id = `bg${i}`
-      div.innerHTML = `<div><span>恭喜</span> <span class="names">${item}</span> <span>同学获得核桃编程</span></div>`
+      div.innerHTML = `<div><span>恭喜</span> <span class="names">${item}</span> <span>同学获得xx编程</span></div>`
       document.querySelector('.contents').appendChild(div)
     })
   }else {
